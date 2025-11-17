@@ -27,10 +27,8 @@ class PageTest extends StatelessWidget {
                 leading: Icon(Icons.settings),
                 title: Text('Option'),
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Couleur()),
-                  );
+                  Navigator.pop(context);
+                  Navigator.pushNamed(context, '/pageTest');
                 },
               ),
             ],
