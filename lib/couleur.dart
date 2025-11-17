@@ -19,6 +19,15 @@ class Couleur extends StatelessWidget {
               width: 100,
               color: Colors.red,
               alignment: Alignment.centerLeft,
+              child: Center(
+                child: ElevatedButton(
+                  onPressed: () {
+                    print("Revien sur page Test");
+                    Navigator.pop(context, '/pageTest');
+                  },
+                  child: Text("Revien-ici"),
+                ),
+              ),
             ),
             Container(
               height: 750,

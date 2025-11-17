@@ -46,7 +46,19 @@ class PageTest extends StatelessWidget {
                   children: [
                     SizedBox(width: 15),
                     Expanded(
-                      child: Container(height: 200, color: Colors.black),
+                      child: Container(
+                        height: 200,
+                        color: Colors.black,
+                        child: Center(
+                          child: ElevatedButton(
+                            onPressed: () {
+                              print("Button click");
+                              Navigator.pushNamed(context, '/pageTest');
+                            },
+                            child: Text("Appui-ici"),
+                          ),
+                        ),
+                      ),
                     ),
                     SizedBox(width: 15),
                   ],
