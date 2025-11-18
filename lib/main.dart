@@ -1,3 +1,4 @@
+import 'package:eval/listTest.dart';
 import 'package:flutter/material.dart';
 import 'widget.dart';
 import 'couleur.dart';
@@ -14,13 +15,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //Router
       routes: {'/pageTest': (BuildContext context) => const Couleur()},
 
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const PageTest(),
+      home: ListTest(),
     );
   }
 }

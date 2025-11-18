@@ -82,10 +82,15 @@ class PageTest extends StatelessWidget {
 
                     SizedBox(width: 15),
                     Expanded(
-                      child: Container(
-                        height: 200,
-                        width: 150,
-                        color: Colors.black,
+                      child: GestureDetector(
+                        onDoubleTap: () {
+                          print("Double tap");
+                        },
+                        child: Container(
+                          height: 200,
+                          width: 150,
+                          color: Colors.black,
+                        ),
                       ),
                     ),
                     SizedBox(width: 15),
